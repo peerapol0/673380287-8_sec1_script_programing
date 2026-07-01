@@ -1,4 +1,5 @@
 
+
 age = int(input("Enter your age: "))
 if age < 0:
     print("Invalid age!")
@@ -14,3 +15,4 @@ else:
 like = input("Do you like action movies? (yes/no): ").strip().lower()
 if like == "yes" and age >= 18:
     print("You might enjoy the latest action blockbuster!")
+    
