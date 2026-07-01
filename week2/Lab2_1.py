@@ -2,9 +2,9 @@ num = int(input("Enter your number:"))
 
 
 if num%2==0:
-    check1 = "Odd"
+    check1 = "even"
 else:
-     check1 = "even"
+     check1 = "odd"
 
 if num == 0:
     check2 = "Zero"
