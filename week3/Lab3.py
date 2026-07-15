@@ -12,11 +12,11 @@ for i in range(1, 13):
     for j in range(1, 13):
         print(f"{i*j:3}", end=' ')
     print(" ")  
-    
+
 print("\n")
 
 #Lab3.2 part 1
-num2 = int(input("Countdown Timer: "))
+num2 = int(input("Enter starting number for countdown: "))
 while num2 != 0:
     print(num2)
     num2 -= 1
