@@ -30,16 +30,19 @@ while choice != 4:
         task = input("Enter the task to add: ")
         todo_list.append(task)
         print(f"Task '{task}' added.")
+        print(f"\nYour todo list: {todo_list}")
     elif choice == 2:
         if todo_list:
-            print("\nYour tasks:")
+            print(f"\nYour todo list: {todo_list}")
+            print("Your tasks:")
             for i, task in enumerate(todo_list, start=1):
                 print(f"{i}.{task}")
         else:
             print("Your to-do list is empty.")
     elif choice == 3:
         if todo_list:
-            print("\nYour tasks:")
+            print(f"\nYour todo list: {todo_list}")
+            print("Your tasks:")
             for i, task in enumerate(todo_list, start=1):
                 print(f"{i}. {task}")
             try:
