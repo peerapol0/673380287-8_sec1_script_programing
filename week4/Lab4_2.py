@@ -24,6 +24,7 @@ print(f"Point 2: x = {point2[0]}, y = {point2[1]}") #เติมเลข 0 แ
 print("\n[2] Attempt Modification (Immutability Demonstration)")
 try:
     point1[0] = 5  # บรรทัดนี้จะทำให้เกิด TypeError เพราะ tuple แก้ไขไม่ได้
+    #บรรทัดนี้จะทำให้เกิด TypeError เพราะ tuple แก้ไขไม่ได้
 except TypeError as e:
     print(f"Error trying to modify tuple: {e}")
 
