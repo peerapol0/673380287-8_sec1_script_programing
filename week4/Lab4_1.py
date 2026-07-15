@@ -10,8 +10,8 @@ student_names = []
 
 
 user_choice = 0
-while user_choice != 5:
-    Choice = ["Add Student", "Find Student", "Remove Student", "Sort Students", "Exit"]
+while user_choice != 6:
+    Choice = ["Add Student", "Find Student", "Remove Student", "Sort Students","Count Students", "Exit"]
     print("\nMenu Options:")
     for i in range(len(Choice)):
         print(f"{i + 1}. {Choice[i]}")
@@ -55,8 +55,11 @@ while user_choice != 5:
         print("\n[4] Sort Students")
         student_names.sort() #เติมฟังก์ชันsort()
         print(f"Sorted list: {student_names}")
-
     elif user_choice == 5:
+        # 6) นับจำนวนนักศึกษาทั้งหมดด้วย len()
+        print("\n[5] Count Students")
+        print(f"Total students: {len(student_names)}") #ใช้คำสั่งlen() หาจำนวนนักศึกษาในลิส student_names👈ต้องทำ
+    elif user_choice == 6:
         break
 
     else:
