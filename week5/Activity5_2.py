@@ -1,7 +1,7 @@
 
 sentence = input("Enter a sentence: ")
-sentence_lower = sentence.lower()
-words = sentence_lower.split()
+sentence = sentence.lower()
+words = sentence.split()
 
 word_counts = {}
 
@@ -13,6 +13,7 @@ for word in words:
         else:
             word_counts[cleaned_word] = 1
 
+print(word_counts)
 print("Word counts:")
 for word, count in word_counts.items():
     print(f"{word}: {count}")
