@@ -40,9 +40,6 @@ while True:
             print(f"Adding new contact '{name}'.")
         phone = input("Enter phone number: ")
         email = input("Enter email: ")
-        if email in contacts:
-            print(f"Email '{email}' is already associated with another contact. Please use a different email.")
-            continue
         normalized_name = normalize_name(name)
 
         # todo (2): เก็บข้อมูลลงใน contacts โดยใช้ name เป็น key
