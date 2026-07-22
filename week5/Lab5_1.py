@@ -15,7 +15,7 @@
 # todo (1): สร้าง dictionary ว่างชื่อ contacts
 contacts = {}
 
-
+#challenge: สร้างฟังก์ชัน normalize_name เพื่อปรับชื่อผู้ติดต่อให้เป็นรูปแบบมาตรฐาน 
 def normalize_name(name):
     return name.strip().title()
 
@@ -34,8 +34,15 @@ while True:
     # --- เมนูที่ 1: เพิ่มหรืออัปเดตข้อมูลผู้ติดต่อ ---
     if choice == '1':
         name = input("Enter contact name: ")
+        if name in contacts:
+            print(f"Contact '{name}' already exists. Updating information.")
+        else:
+            print(f"Adding new contact '{name}'.")
         phone = input("Enter phone number: ")
         email = input("Enter email: ")
+        if email in contacts:
+            print(f"Email '{email}' is already associated with another contact. Please use a different email.")
+            continue
         normalized_name = normalize_name(name)
 
         # todo (2): เก็บข้อมูลลงใน contacts โดยใช้ name เป็น key
